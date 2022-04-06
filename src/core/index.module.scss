@@ -1,0 +1,52 @@
+@import 'src/assets/css/mixin.scss';
+.templateRender {
+  cursor: move;
+  @include wh(65px, 100%);
+  overflow: hidden;
+  @include style(13px, #767676);
+  margin: 10px 0;
+  text-align: center;
+  @include flexContainer(center);
+  padding: 5px 0;
+  transition: all 0.5s;
+  &:hover {
+    // border: 1px solid #1890ff;
+    background: #f1f2f4;
+  }
+  img {
+    width: 50px;
+    vertical-align: middle;
+  }
+  p {
+    width: 100%;
+  }
+}
+.warp {
+  width: 100%;
+  overflow: hidden;
+}
+.dropTarget {
+  margin-left: 20px;
+  height: 100vh;
+  overflow: hidden;
+  background: #fff;
+  border-left: 1px solid #f0f0f0;
+}
+.close {
+  align-items: center;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  line-height: 40px;
+  position: fixed;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 0;
+  @include wh(41px, 40px);
+  box-shadow: -6px 0 16px -8px rgb(0 0 0 / 8%), -9px 0 28px 0 rgb(0 0 0 / 5%),
+    -12px 0 48px 16px rgb(0 0 0 / 3%);
+}
