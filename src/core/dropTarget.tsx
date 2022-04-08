@@ -146,7 +146,6 @@ const DropTarget = memo(function DropTarget(props) {
           <Menu.Item
             text="删除"
             key="1"
-            hotkey="Delete"
             onClick={() => handleKeys(1)}
             icon={<DeleteOutlined />}
             disabled={!currentVal ? true : false}

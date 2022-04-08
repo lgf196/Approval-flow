@@ -9,7 +9,7 @@ import {
   SnippetsOutlined,
   InsertRowBelowOutlined,
   PrinterOutlined,
-  DownloadOutlined,
+  SaveOutlined,
 } from '@ant-design/icons';
 import { Tooltip, Button, Popover } from 'antd';
 import { DataUri } from '@antv/x6';
@@ -83,13 +83,6 @@ const Head = memo(function Head(props) {
           <code>ctrl+y</code>
         </span>
         <span className="pd">重做</span>
-      </p>
-      <p className="marB-10">
-        <span style={{ display: 'inline-block', width: '150px' }}>
-          <code>meta+d</code>
-          <code>ctrl+d</code>
-        </span>
-        <span className="pd">删除</span>
       </p>
       <p className="marB-10">
         <span style={{ display: 'inline-block', width: '150px' }}>
@@ -167,17 +160,17 @@ const Head = memo(function Head(props) {
         </a>
       </h1>
       <div className={style.option}>
-        <Button type="primary" ghost icon={<DownloadOutlined />} onClick={() => save()}>
+        <Button type="primary" ghost icon={<SaveOutlined />} onClick={() => save()}>
           保存
         </Button>
-        <Button
+        {/* <Button
           type="primary"
           ghost
           icon={<DownloadOutlined />}
           onClick={() => handleClick('save')}
         >
           导出画布
-        </Button>
+        </Button> */}
         <Popover
           content={content}
           title={<p style={{ textAlign: 'center' }}>快捷键</p>}
